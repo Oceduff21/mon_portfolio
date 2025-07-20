@@ -1,0 +1,7 @@
+.section-display {
+  display: flex;
+}
+.section-display .text-content {
+  color: #c4007c;
+  flex: 2;
+}

@@ -4,26 +4,14 @@
 @import "layout";
 @import "components";
 
+
 h1 {
     color:$primary;
-    text-align: center;
 }
 
 .presentation {
     color: $primary;
     font-size: 1.2em;
-    text-align: center;
     margin-top: 20px;
+    text-align: center;
 }
-
-div.parent {
-    color: transparent;
-
-    &:hover {
-        color: darkblue;
-    }
-    .enfant {
-        color: $dark;
-    }
-}
-

@@ -2,28 +2,61 @@ body {
   font: 19px/25px Pacifico, cursive;
 }
 
+menu ul {
+  list-style: none;
+  padding: 15px;
+  text-align: end;
+}
+menu ul li {
+  display: inline;
+  margin: 10px 15px;
+}
+menu ul li a {
+  text-decoration: none;
+  color: rgb(196, 0, 124);
+}
+menu ul li a:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  background-color: rgb(108, 2, 85);
+}
+
 body {
   background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 10px 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(108, 2, 85);
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+footer a {
+  color: rgb(196, 0, 124);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.section-display {
+  display: flex;
+}
+.section-display .text-content {
+  color: rgb(196, 0, 124);
+  flex: 2;
 }
 
 h1 {
-  color: rgb(72, 12, 237);
-  text-align: center;
+  color: rgb(196, 0, 124);
 }
 
 .presentation {
-  color: rgb(72, 12, 237);
+  color: rgb(196, 0, 124);
   font-size: 1.2em;
-  text-align: center;
   margin-top: 20px;
-}
-
-div.parent {
-  color: transparent;
-}
-div.parent:hover {
-  color: darkblue;
-}
-div.parent .enfant {
-  color: rgb(90, 1, 95);
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

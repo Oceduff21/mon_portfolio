@@ -1,0 +1,13 @@
+@import "variables";
+
+.section-display {
+    display: flex;
+
+
+    .text-content {
+        color:$primary;
+        flex: 2;
+    }
+
+    //.actions-div {
+}

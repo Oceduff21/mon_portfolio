@@ -1,5 +1,48 @@
+@import "variables";
+
+menu {
+    ul {
+        list-style: none;
+        padding: 15px;
+        text-align: end;
+
+        li {
+            display: inline;
+            margin: 10px 15px;
+
+            a {
+                text-decoration: none;
+                color: $primary;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: $white;
+                    background-color: $dark;
+                }
+            }
+        }
+    }
+}
 
 body {
     background-color:$white;
+    padding: 20px;
+    margin: 10px 20px;
 }
 
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: $dark;
+    color: $white;
+    margin-top: 20px;
+
+    a {
+        color: $primary;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
