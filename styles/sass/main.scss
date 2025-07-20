@@ -1,0 +1,27 @@
+body {
+    background-color: bisque;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+.presentation {
+    color: rgb(108, 219, 219);
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+div.parent {
+    color: transparent;
+
+    &:hover {
+        color: darkblue;
+    }
+    .enfant {
+        color: darkgreen;
+    }
+}
+
