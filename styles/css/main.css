@@ -1,14 +1,18 @@
 body {
-  font: 19px/23px, Montserrat, sans-serif;
+  font: 19px/25px Pacifico, cursive;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
 }
 
 h1 {
-  color: darkblue;
+  color: rgb(72, 12, 237);
   text-align: center;
 }
 
 .presentation {
-  color: rgb(108, 219, 219);
+  color: rgb(72, 12, 237);
   font-size: 1.2em;
   text-align: center;
   margin-top: 20px;
@@ -21,5 +25,5 @@ div.parent:hover {
   color: darkblue;
 }
 div.parent .enfant {
-  color: darkgreen;
+  color: rgb(90, 1, 95);
 }/*# sourceMappingURL=main.css.map */
