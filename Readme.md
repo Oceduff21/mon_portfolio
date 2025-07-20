@@ -10,5 +10,5 @@ Déployé sur :
     GitHub : //lien du Git 
 
 
-Info : 
+#Info : 
 Ce portfolio à éte crée lors d'une série de live Studi 
