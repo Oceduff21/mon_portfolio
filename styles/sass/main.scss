@@ -3,15 +3,7 @@
 @import "variables";
 @import "layout";
 @import "components";
+@import "buttons"
 
 
-h1 {
-    color:$primary;
-}
 
-.presentation {
-    color: $primary;
-    font-size: 1.2em;
-    margin-top: 20px;
-    text-align: center;
-}

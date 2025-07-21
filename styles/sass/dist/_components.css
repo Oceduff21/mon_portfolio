@@ -1,7 +1,29 @@
 .section-display {
-  display: flex;
+  padding: 3rem 2rem;
 }
-.section-display .text-content {
-  color: #c4007c;
-  flex: 2;
+.section-display .presentation-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.section-display .presentation-container .text-content {
+  flex: 1;
+}
+.section-display .presentation-container .text-content h1.mon-nom {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.section-display .presentation-container .text-content p.presentation {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.section-display .presentation-container .illustration {
+  flex: 1;
+  text-align: right;
+}
+.section-display .presentation-container .illustration img {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
 }

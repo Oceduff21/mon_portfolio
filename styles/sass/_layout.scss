@@ -1,33 +1,50 @@
-@import "variables";
+.header-website {
+    color:$primary;
+    text-align: center;
+} 
+
 
 menu {
     ul {
-        list-style: none;
-        padding: 15px;
-        text-align: end;
+        background-color: $dark;
+        list-style:none; 
+        padding: 2rem;   
+        text-align: center; 
+        color: $white; 
 
         li {
             display: inline;
-            margin: 10px 15px;
+            padding: 10px; 
 
             a {
                 text-decoration: none;
                 color: $primary;
 
                 &:hover {
-                    text-decoration: underline;
+                    text-decoration:overline;  
                     color: $white;
                     background-color: $dark;
+                    border-radius: 10px;
+                    margin: 25px; 
+                    transition-duration: 0.10s;
+                    padding: 05px;
+                    
                 }
             }
         }
     }
 }
 
-body {
-    background-color:$white;
-    padding: 20px;
-    margin: 10px 20px;
+.mon-nom {
+    color: $primary;
+    font-weight: 700;  
+}
+
+.Bienvenue {
+    color: $primary;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center;
 }
 
 footer {

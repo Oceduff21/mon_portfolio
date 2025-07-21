@@ -1,0 +1,18 @@
+.btn {
+    background-color: $primary; 
+
+        a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration:overline;  
+                    color: $white;
+                    background-color: $dark;
+                    border-radius: 10px;
+                    margin: 25px; 
+                    transition-duration: 0.10s;
+                    padding: 05px;
+                    
+                }
+            }
+}

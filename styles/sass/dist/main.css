@@ -2,33 +2,38 @@ body {
   font: 19px/25px Pacifico, cursive;
 }
 
-/*menu {
-    ul {
-        list-style: none;
-        padding: 15px;
-        text-align: end;
+.header-website {
+  color: #ff20ad;
+  text-align: center;
+}
 
-        li {
-            display: inline;
-            margin: 10px 15px;
+menu ul {
+  background-color: #6c0255;
+  list-style: none;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+menu ul li {
+  display: inline;
+  padding: 10px;
+}
+menu ul li a {
+  text-decoration: none;
+  color: #ff20ad;
+}
+menu ul li a:hover {
+  text-decoration: overline;
+  color: white;
+  background-color: #6c0255;
+  border-radius: 10px;
+  margin: 25px;
+  transition-duration: 0.1s;
+  padding: 5px;
+}
 
-            a {
-                text-decoration: none;
-                color: $primary;
-
-                &:hover {
-                    text-decoration: underline;
-                    color: $white;
-                    background-color: $dark;
-                }
-            }
-        }
-    }
-}*/
-body {
-  background-color: white;
-  padding: 20px;
-  margin: 10px 20px;
+.mon-nom {
+  color: #ff20ad;
 }
 
 footer {
@@ -39,7 +44,7 @@ footer {
   margin-top: 20px;
 }
 footer a {
-  color: #c4007c;
+  color: #ff20ad;
   text-decoration: none;
 }
 footer a:hover {
@@ -47,20 +52,39 @@ footer a:hover {
 }
 
 .section-display {
+  padding: 1rem 2rem;
+}
+.section-display .presentation-container {
+  background-color: rgba(209, 207, 207, 0.777);
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
 }
-.section-display .text-content {
-  color: #c4007c;
-  flex: 2;
+.section-display .presentation-container .text-content {
+  margin: 2rem;
+  color: #ff20ad;
+  flex: 1;
+}
+.section-display .presentation-container .text-content h1.mon-nom {
+  font-size: 2rem;
+}
+.section-display .presentation-container .text-content p.presentation {
+  font-size: 1.1rem;
+  line-height: 40px;
+}
+.section-display .presentation-container .illustration {
+  flex: 1;
+  text-align: right;
+}
+.section-display .presentation-container .illustration img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 550px;
 }
 
-h1 {
-  color: #c4007c;
-}
-
-.presentation {
-  color: #c4007c;
-  font-size: 1.2em;
-  margin-top: 20px;
-  text-align: center;
+.btn {
+  background-color: #6c0255;
 }
