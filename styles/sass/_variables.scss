@@ -1,6 +1,18 @@
-$primary: rgb(255, 32, 173);
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+//Couleurs
+$primary: rgba(117, 32, 255, 0.13);
 $secondary: rgba(227, 101, 185, 0.745);
 $grey: rgba(209, 207, 207, 0.777);
-$dark: rgb(108, 2, 85);
 $white: rgb(255, 255, 255);
+$dark: rgb(108, 2, 85);
 $bgMenu: rgba(234, 77, 182, 0.159);
+
+/*// Font sizes
+$font-base: 16px;
+$font-lg: 18px;
+$font-xl: 24px;*/

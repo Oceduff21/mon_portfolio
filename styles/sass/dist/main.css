@@ -2,38 +2,58 @@ body {
   font: 19px/25px Pacifico, cursive;
 }
 
-.header-website {
-  color: #ff20ad;
-  text-align: center;
-}
-
-menu ul {
+/*// Font sizes
+$font-base: 16px;
+$font-lg: 18px;
+$font-xl: 24px;*/
+nav ul {
   background-color: #6c0255;
   list-style: none;
-  padding: 2rem;
-  text-align: center;
-  color: white;
+  padding: 1rem 1rem;
 }
-menu ul li {
+nav ul li {
   display: inline;
   padding: 10px;
 }
-menu ul li a {
+nav ul li a {
   text-decoration: none;
   color: #ff20ad;
 }
-menu ul li a:hover {
+nav ul li a:hover {
   text-decoration: overline;
   color: white;
   background-color: #6c0255;
   border-radius: 10px;
   margin: 25px;
-  transition-duration: 0.1s;
+  transition-duration: 0.25s;
   padding: 5px;
 }
 
-.mon-nom {
+.Bienvenue {
   color: #ff20ad;
+  font-size: 1.2em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+html {
+  font-size: 100%;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 85%;
+  }
 }
 
 footer {
@@ -51,40 +71,83 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.body {
+  background-image: url(/images/workplace-elements-marble-table-top-view.jpg);
+}
+
+.header-website {
+  color: #ff20ad;
+  text-align: center;
+  border-color: white;
+}
+
 .section-display {
-  padding: 1rem 2rem;
+  padding: 1rem 5rem;
+  margin: 5px 3px;
+}
+.section-display section {
+  height: auto;
 }
 .section-display .presentation-container {
-  background-color: rgba(209, 207, 207, 0.777);
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  transition: all 0.3s ease-in-out;
 }
-.section-display .presentation-container .text-content {
+.section-display .text-content {
   margin: 2rem;
-  color: #ff20ad;
   flex: 1;
 }
-.section-display .presentation-container .text-content h1.mon-nom {
+.section-display .text-content h2.mon-nom {
   font-size: 2rem;
+  font-weight: 700;
+  color: #ff20ad;
 }
-.section-display .presentation-container .text-content p.presentation {
+.section-display .text-content p.presentation {
   font-size: 1.1rem;
   line-height: 40px;
+  color: #6c0255;
 }
-.section-display .presentation-container .illustration {
+.section-display .illustration {
   flex: 1;
   text-align: right;
 }
-.section-display .presentation-container .illustration img {
-  max-width: 100%;
+.section-display .illustration img {
+  max-width: 80%;
   display: block;
-  margin: auto;
-  height: auto;
-  width: 550px;
+  width: auto;
+}
+@media screen and (max-width: 768px) {
+  .section-display .section-display .presentation-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .section-display .section-display .presentation-container .text-content {
+    margin: 1rem 0;
+  }
+  .section-display .section-display .presentation-container .illustration {
+    text-align: center;
+  }
+  .section-display .section-display .presentation-container .illustration img {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
 
 .btn {
+  background-color: #ff20ad;
+  border: 10px;
+  padding: 15px 30px;
+  display: inline;
+  margin: 20px 15px;
+  border-radius: 25px;
+}
+.btn:hover {
+  text-decoration: overline;
+  color: white;
   background-color: #6c0255;
+  transition-duration: 0.25s;
 }

@@ -1,18 +1,27 @@
+@function darkenBorder ($color){
+    @return darken ($color , 20%)
+}
+
 .btn {
-    background-color: $primary; 
+    background-color: $white; 
+    text-transform: uppercase; 
+    border-color: darken($dark);   
+    padding: 15px 30px;
+    display: inline;
+    margin: 20px 15px; 
+    border-radius: 25px; 
 
-        a {
-                text-decoration: none;
+    .text-btn {
+        
+    }
 
-                &:hover {
-                    text-decoration:overline;  
-                    color: $white;
-                    background-color: $dark;
-                    border-radius: 10px;
-                    margin: 25px; 
-                    transition-duration: 0.10s;
-                    padding: 05px;
-                    
-                }
-            }
+
+        &:hover {
+            transform:translateY(-10px);
+            text-decoration:overline;  
+            color: $white;
+            background-color: $dark;
+            transition:all ease 0.3s;  
+        }
+            
 }

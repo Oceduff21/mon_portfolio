@@ -1,16 +1,8 @@
-.header-website {
-    color:$primary;
-    text-align: center;
-} 
-
-
-menu {
+nav {
     ul {
         background-color: $dark;
         list-style:none; 
-        padding: 2rem;   
-        text-align: center; 
-        color: $white; 
+        padding: 1rem 1rem;
 
         li {
             display: inline;
@@ -18,15 +10,15 @@ menu {
 
             a {
                 text-decoration: none;
-                color: $primary;
+                color: $white;
 
                 &:hover {
                     text-decoration:overline;  
-                    color: $white;
-                    background-color: $dark;
+                    color: $secondary;
+                    background-color: $dark; 
                     border-radius: 10px;
                     margin: 25px; 
-                    transition-duration: 0.10s;
+                    transition-duration: 0.25s;
                     padding: 05px;
                     
                 }
@@ -35,16 +27,31 @@ menu {
     }
 }
 
-.mon-nom {
-    color: $primary;
-    font-weight: 700;  
-}
 
 .Bienvenue {
-    color: $primary;
+    color: $dark;
     font-size: 1.2em;
     margin-top: 20px;
-    text-align: center;
+    text-align: center; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    }
+
+    // Responsive typography
+    html {
+    font-size: 100%;
+
+    @media screen and (max-width: $breakpoint-md) {
+    font-size: 90%;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+    font-size: 85%;
+    }
 }
 
 footer {
