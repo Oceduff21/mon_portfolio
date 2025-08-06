@@ -1,5 +1,5 @@
 @function darkenBorder ($color){
-    @return darken ($color , 20%)
+    @return darken ($color , 20)
 }
 
 .btn {
@@ -10,18 +10,15 @@
     display: inline;
     margin: 20px 15px; 
     border-radius: 25px; 
-
-    .text-btn {
-        
-    }
-
-
+    
         &:hover {
             transform:translateY(-10px);
             text-decoration:overline;  
             color: $white;
-            background-color: $dark;
+            background-color: $dark; 
             transition:all ease 0.3s;  
         }
             
 }
+
+

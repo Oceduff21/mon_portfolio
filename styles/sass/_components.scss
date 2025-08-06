@@ -28,83 +28,74 @@ gap: 2rem;
 transition: all 0.3s ease-in-out;
 }
 
-.text-content {
-    margin: 2rem 5rem;
-    flex: 1; 
+    .text-content {
+        margin: 2rem 5rem;
+        //flex: 1; 
 
-    h2.mon-nom {
-    font-size: 2rem;
-    font-weight: 700;
-    color: $dark; 
-    }
+        h2.mon-nom {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $dark; 
+        }
 
-    p.presentation {
-    font-size: 1.1rem;
-    line-height: 40px;
-    color: $dark; 
+        p.presentation {
+        font-size: 1.1rem;
+        line-height: 40px;
+        color:$dark; 
+        }
     }
 }
 
 .illustration {
-    flex: 1; 
-    text-align: right;
+max-width: 50%;
+display: block; 
+width: auto;
+border-radius: 100%;
+margin-left: 50px;
+}
 
-        img {
-        max-width: 50%;
-        display: block; 
-        width: auto;
-        border-radius: 100%;
-        margin-left: 50px;
+.social-carrousel {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+max-width: 600px;
+margin: 2rem auto;
+padding: 1rem;
+background-color: #f8f8f8;
+border-radius: 10px;
+}
+
+.arrow {
+background: $dark;
+border: none;
+font-size: 2rem;
+cursor: pointer;
+color:$white; 
+}
+
+&:hover {
+    color: #000;
+}
+
+.carousel-window {
+    overflow: hidden;
+    width: 10%; 
+}
+
+.carousel-track {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.4s ease-in-out;
+
+    .logo {
+    width: 10px;
+    height: 10px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+
+        &:hover {
+        transform: scale(1.2);
         }
-}
-
-
-@media screen and (max-width: $breakpoint-md) {
-  // styles pour tablette
-}
-
-@media screen and (max-width: $breakpoint-sm) {
-  // styles pour mobile
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
-.section-display {
-.presentation-container {
-    flex-direction: column;
-    text-align: center;
-
-    .text-content {
-    margin: 1rem 0;
-    }
-
-    .illustration {
-    text-align: center;
-
-    img {
-        width: 80%; // facultatif
-        max-width: 300px;
-        margin: 0 auto;
-    }
     }
 }
-}
-}}

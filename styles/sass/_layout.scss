@@ -1,6 +1,6 @@
 nav {
     ul {
-        background-color: $dark;
+        background-color:$dark ;
         list-style:none; 
         padding: 1rem 1rem;
 
@@ -19,8 +19,7 @@ nav {
                     border-radius: 10px;
                     margin: 25px; 
                     transition-duration: 0.25s;
-                    padding: 05px;
-                    
+                    padding: 05px;  
                 }
             }
         }
@@ -57,7 +56,7 @@ nav {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: $dark;
+    background-color:$dark;
     color: $white;
     margin-top: 20px;
 
